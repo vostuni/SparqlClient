@@ -11,7 +11,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 public class QueryExecutor {
 
 	private String uri;
-	private String endpoint="http://193.204.59.20:8890/sparql";
+	private String endpoint="http://dbpedia.org/sparql";
 	private String graphURI=null;
 
 	public void exec(String uri) {
@@ -39,7 +39,7 @@ public class QueryExecutor {
 
 	private void execQuery(Query query) {
 
-		System.out.println("query exec : " + query.toString());
+		System.out.println("executing query  : " + query.toString());
 
 		QueryExecution qexec = null;
 		try {
@@ -55,6 +55,8 @@ public class QueryExecutor {
 			RDFNode node, prop;
 			
 			String n,p;
+			
+			System.out.println("Results:");
 
 			while (results.hasNext()) {
 

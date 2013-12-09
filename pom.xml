@@ -17,7 +17,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>${exec.maven.version}</version>
 				<configuration>
-					<mainClass>it.poliba.sisinflab.mapping.Mapper</mainClass>
+					<mainClass>org.eswc2014.challenge.lodrecsys.sparql.QueryExecutor</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
